@@ -14,7 +14,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +34,49 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* add css rules for header logo and nav*/
+.header {
+  position: absolute;
+  width: 1240px;
+  height: 68px;
+  left: 100px;
+  top: 40px;
+}
+
+/*add css rules for header area*/
+/* add image background to subheader moto(chez vous...)
+the text must be centered*/
+.subHeader {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+
+  width: 1240px;
+  height: 223px;
+  /* add backgroundimg*/
+  background-image: url(./images/backgroundSubHeader.png);
+
+  opacity: 2;
+  border-radius: 25px;
+}
+/* center subHeader text in the background imagz*/
+.subHeader-text {
+  position: absolute;
+  top: 40px;
+
+  width: 1240px;
+  height: 223px;
+  left: 100px;
+  font-family: "Monsterrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  /* identical to box height, or 117% */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
 }

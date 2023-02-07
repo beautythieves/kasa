@@ -1,13 +1,16 @@
 import React from 'react';
-/* import header image */
-import header from '../images/Header.png';
+/* import header logo kasa image */
+import logo from '../images/logoKasa.png';
+import '../styles/header.css';
 /* create a header component */
-/* get scr header image */
 
 export default function Header() {
   return (
     <header>
-  <img className="header" src={header} alt="kasa logo"/>
+    <p>
+  <img className="header" src={logo} alt="kasa logo"/></p>
+  <p> Accueil</p>
+  <p> &Agrave; propos</p>
   </header>
   )
 }
