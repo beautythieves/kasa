@@ -1,13 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-
+/* import Header from   ./components/header*/
+import Header from './components/header';
 function App() {
   return (
     <div className="App">
+    <Header />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      
+        <img src= {Header} />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to reload.458
+        
         </p>
         <a
           className="App-link"
