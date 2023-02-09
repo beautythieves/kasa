@@ -18,10 +18,10 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-       <Route path= "/about" element={<About />}></Route>
-       <Route path= "/accomodation" element={<Accomodation />}></Route>
-       {/* if the user types in a wrong path, it will show the error page */}
-       <Route path= "*" element={<Error />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/accomodation" element={<Accomodation />}></Route>
+        {/* if the user types in a wrong path (none of the path below), it will show the error page */}
+        <Route path="*" element={<Error />}></Route>
       </Routes>
     </BrowserRouter>
     <Footer />
