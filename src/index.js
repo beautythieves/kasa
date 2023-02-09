@@ -14,17 +14,19 @@ import Accomodation from "./pages/Accomodation";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Header />
+   
     <BrowserRouter>
+    <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/accomodation" element={<Accomodation />}></Route>
-        {/* if the user types in a wrong path (none of the path below), it will show the error page */}
-        <Route path="*" element={<Error />}></Route>
+       <Route path= "/about" element={<About />}></Route>
+       <Route path= "/accomodation" element={<Accomodation />}></Route>
+       {/* if the user types in a wrong path (none of the path below), it will show the error page */}
+       <Route path= "*" element={<Error />}></Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
-    <Footer />
+   
   </React.StrictMode>
 );
 
