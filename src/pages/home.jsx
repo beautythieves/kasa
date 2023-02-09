@@ -1,15 +1,13 @@
 /* create home page */
 import React from 'react';
-/* import header component */
-import Header from '../components/header';
+/* import subHeader component */
+import SubHeader from '../components/subHeader/SubHeader';
 /* home page */
-export default class Home extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        <h1>Home</h1>
-      </div>
-    );
-  }
+export default  function Home() {
+  return (
+    <div>
+      <SubHeader />
+      buarrr
+    </div>
+  );
 }

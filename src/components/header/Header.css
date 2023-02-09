@@ -1,0 +1,15 @@
+/* add css for the header*/
+header { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 80px;
+ }
+/* navbar must be centered*/
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+}

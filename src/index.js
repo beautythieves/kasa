@@ -1,13 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import Home from "./pages/Home";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { Routes, BrowserRouter, Route } from "react-router-dom";
+import Error from "./pages/Error";
+import About from "./pages/About";
+import Accomodation from "./pages/Accomodation";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+       <Route path= "/about" element={<About />}></Route>
+       <Route path= "/accomodation" element={<Accomodation />}></Route>
+       {/* if the user types in a wrong path, it will show the error page */}
+       <Route path= "*" element={<Error />}></Route>
+      </Routes>
+    </BrowserRouter>
+    <Footer />
   </React.StrictMode>
 );
 

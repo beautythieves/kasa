@@ -1,0 +1,18 @@
+/* followinfg the ui design canva
+on https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3%3A0&t=uvB4AHpzUspexzT6-0*/
+.subHeader-text {
+  display: flex;
+  /*center the text*/
+  justify-content: center;
+  padding: 100px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  /* background image is the backgroundSubheader img*/
+  background-image: url(./backgroundSubHeader.png);
+  background-size: 1240px 223px;
+  background-repeat: no-repeat;
+}
