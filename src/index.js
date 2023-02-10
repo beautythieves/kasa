@@ -4,12 +4,12 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import Home from "./pages/Home";
+import Home from "./pages/HomePage";
 
 import { Routes, BrowserRouter, Route } from "react-router-dom";
-import Error from "./pages/Error";
-import About from "./pages/About";
-import Accomodation from "./pages/Accomodation";
+import Error from "./pages/ErrorPage";
+import About from "./pages/AboutPage";
+import Accomodation from "./pages/AccomodationPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
