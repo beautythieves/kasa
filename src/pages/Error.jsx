@@ -5,7 +5,6 @@ import SubHeader from '../components/subHeader/SubHeader';
 export default  function Error () {
   return (
     <div>
-      <SubHeader />
 error 404    </div>
   );
 }
