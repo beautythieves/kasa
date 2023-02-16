@@ -1,13 +1,16 @@
 /* create home page */
-import React from 'react';
+import React from "react";
 /* import subHeader component */
-import SubHeader from '../components/subHeader/SubHeader';
+import SubHeader from "../components/subHeader/SubHeader";
+/* import display card component */
+import DisplayCards from "../components/Home/DisplayCards";
+
 /* home page */
-export default  function Home() {
+export default function Home() {
   return (
     <div>
       <SubHeader />
-      acceuil
+      <DisplayCards />
     </div>
   );
 }

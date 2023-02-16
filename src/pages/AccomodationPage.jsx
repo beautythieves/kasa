@@ -4,7 +4,7 @@ import SubHeader from '../components/subHeader/SubHeader';
 
 export default  function Accomodation () {
   return (
-    <div>
+    <div >
       <SubHeader />
 accomodation    </div>
   );

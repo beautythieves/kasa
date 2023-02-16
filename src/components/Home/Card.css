@@ -1,0 +1,24 @@
+
+/* set containerCards size and position*/
+.containerCards {
+  display: flex;
+  
+}
+/* set size of images*/
+.accomodation_card {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+}
+
+.accomodation_img {
+    position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* set the place of figcaption text*/
+.accomodation_figure_figcaption_title {
+
+ 
+}
