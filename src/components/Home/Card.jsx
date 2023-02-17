@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./Card.css";
 
 /* create card accomodation*/
@@ -12,9 +13,8 @@ import "./Card.css";
  */
 export default function Card({ id, title, cover }) {
   return (
-    <section className="containerCards">
-      <li key={id} className="accomodation_card">
-        <a href={"/accomodation/" + id}>
+    <article  key={id} className="accomodation_card">
+        <Link to={"/accomodation/" + id}>
           <div className="accomodation_container">
             <img
               src={cover}
@@ -23,8 +23,7 @@ export default function Card({ id, title, cover }) {
             />
             <h2 className="accomodation_title">{title}</h2>
           </div>
-        </a>
-      </li>
-    </section>
+        </Link>
+    </article>
   );
 }
