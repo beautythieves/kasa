@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+/*import style.scss from styles/style.csss*/
+import "./styles/style.css";
+
 import reportWebVitals from "./reportWebVitals";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
@@ -19,7 +21,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
-        <Route path="/accomodation" element={<Accomodation />}></Route>
+        <Route path="/accomodation/:id" element={<Accomodation />}></Route>
         {/* if the user types in a wrong path (none of the path below), it will show the error page */}
         <Route path="*" element={<Error />}></Route>
       </Routes>

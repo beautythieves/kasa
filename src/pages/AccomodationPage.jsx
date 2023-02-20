@@ -1,11 +1,10 @@
 import React from 'react';
-/* import subHeader component */
-import SubHeader from '../components/subHeader/SubHeader';
+import AccomodationDetails from '../components/Accomodation/Accomodation';
 
 export default  function Accomodation () {
   return (
     <div >
-      <SubHeader />
-accomodation    </div>
+      <AccomodationDetails />
+    </div>
   );
 }
