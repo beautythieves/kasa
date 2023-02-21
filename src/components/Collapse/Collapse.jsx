@@ -14,8 +14,7 @@ export default function Collapse({title, content}) {
     const [isExpanded, setIsExpanded] = useState(false);
     return (
         <article className="collapse">
-        <button onClick={() => setIsExpanded(!isExpanded)}> fleche vers le bas </button>
-        <h1>{title}</h1>
+        <button onClick={() => setIsExpanded(!isExpanded)}>{title}</button>
         {showContent(content, isExpanded)}
         </article>
     )
