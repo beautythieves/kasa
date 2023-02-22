@@ -1,14 +1,15 @@
 /*useParams in order to extract parameters from URL*/ 
+import Carousel from 'components/Carousel/Carousel';
 import { useParams } from 'react-router-dom';
-import accommodationData from '../../data/data.json';
+import { getAccomodation } from 'services/dataManager';
 
 export default function AccomodationDetails() {
   const { id } = useParams();
-  const accommodationDetails = accommodationData.find(accommodation => accommodation.id === id);
+  const accommodationDetails = getAccomodation(id);
 
   return (
     <div>
-      <img src={accommodationDetails.cover} alt={accommodationDetails.title} />
+      <Carousel images={accommodationDetails.pictures} />
       <h1>{accommodationDetails.title}</h1>
       <ul>
         {accommodationDetails.tags.map((tag, index) => (

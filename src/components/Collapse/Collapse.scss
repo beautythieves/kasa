@@ -1,0 +1,13 @@
+/* CSS file */
+
+/* Style the arrowheads */
+.collapse h1 .arrow {
+    font-size: 1.2em;
+    margin-left: 0.5em;
+    color: rgb(224, 18, 18);
+  }
+  
+  /* Style the arrowheads when the menu is expanded */
+  .collapse h1.is-expanded .arrow {
+    transform: rotate(180deg);
+  }

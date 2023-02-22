@@ -1,0 +1,27 @@
+.carousel {
+    display: grid;
+    grid-template-areas: "start . . "
+        "prev . next"
+        ". position end";
+    grid-template-columns: 3rem auto 3rem;
+    grid-template-rows: 3rem auto 3rem;
+    width: 1024px;
+
+    button:first-of-type {
+        grid-area: prev;
+        
+    }
+
+    button:last-of-type {
+        grid-area: next;
+    }
+
+    div {
+        grid-area: position;
+    }
+
+    img {
+        grid-area: start /start/end/ end;
+        object-fit: cover;
+    }
+}

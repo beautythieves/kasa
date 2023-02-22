@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
-/* create collapse menu*/
-
+import "./Collapse.scss";
 /**
  * [default description]
  *
@@ -14,7 +13,9 @@ export default function Collapse({title, content}) {
     const [isExpanded, setIsExpanded] = useState(false);
     return (
         <article className="collapse">
-        <button onClick={() => setIsExpanded(!isExpanded)}>{title}</button>
+        <h1 onClick={() => setIsExpanded(!isExpanded)}>
+        {title} <span className="arrow">{isExpanded ? "\u2303" : "\u2304"}</span>
+        </h1>
         {showContent(content, isExpanded)}
         </article>
     )

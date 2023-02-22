@@ -5,6 +5,8 @@
   width: 340px;
   height: 340px;
   object-fit: cover;
+  box-shadow: 1px 1px 5px #ccc;
+  border-radius: 5px;
 }
 .accomodation_card > a {
   text-decoration: none;
@@ -15,6 +17,9 @@
   width: 340px;
   object-fit: cover;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .accomodation_img {
 

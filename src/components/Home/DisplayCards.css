@@ -9,3 +9,6 @@
   padding: 30px;
 
 }
+.accomodations li {
+  min-height: 300px;
+}

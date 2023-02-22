@@ -13,8 +13,8 @@ on https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3
   font-family: "Montserrat", sans-serif;
   /* background image is the backgroundSubheader img*/
   background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./backgroundSubHeader.png);
-  background-size: 1240px 223px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
+  border-radius: 10px;
 }

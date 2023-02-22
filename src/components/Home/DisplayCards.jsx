@@ -11,7 +11,7 @@ import "./DisplayCards.css";
  */
 export default function DisplayCards() {
     return (
-        <ul className="accomodations">
+        <ul className="accomodations" >
         {accomodations.map((accomodation) => (
             <Card
             key={accomodation.id}
