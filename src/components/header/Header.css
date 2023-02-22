@@ -1,12 +1,14 @@
 /* add css for the header*/
 header { 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding: 80px;
+  display: flex;
+align-items: center;
+
+    padding: 80px 0;
+    margin: 100px 200px;
  }
 /* navbar must be centered*/
 nav {
+    margin-left: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -17,5 +19,6 @@ nav {
 .navbar > a{
     color: #ff6060;
     font-size : 24px;
+    margin-left: 50px;
 
 }
