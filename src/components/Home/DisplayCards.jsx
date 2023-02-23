@@ -4,7 +4,7 @@ import accomodations from "../../data/data";
 /* import card accomodation */
 import Card from "./Card";
 /* import display card css */
-import "./DisplayCards.css";
+import "./DisplayCards.scss";
 /* create display card for homepage*/
 /**
  * 

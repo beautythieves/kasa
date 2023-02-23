@@ -1,11 +1,14 @@
 .carousel {
     display: grid;
+    place-items: center;
     grid-template-areas: "start . . "
         "prev . next"
         ". position end";
     grid-template-columns: 3rem auto 3rem;
     grid-template-rows: 3rem auto 3rem;
     width: 1024px;
+    height: 400px;
+    margin:  0 auto;
 
     button:first-of-type {
         grid-area: prev;
@@ -23,5 +26,7 @@
     img {
         grid-area: start /start/end/ end;
         object-fit: cover;
+        width: 100%; 
+  height: 100%;
     }
 }

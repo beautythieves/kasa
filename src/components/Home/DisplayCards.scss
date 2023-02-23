@@ -10,10 +10,11 @@
   align-items: center;
   justify-content: center;
   min-height: 300px;
+
+  > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.accomodations > li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}/*# sourceMappingURL=DisplayCards.css.map */
