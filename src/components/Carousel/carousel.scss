@@ -1,32 +1,44 @@
 .carousel {
     display: grid;
     place-items: center;
-    grid-template-areas: "start . . "
-        "prev . next"
-        ". position end";
+    grid-template-areas: 
+      "start . ."
+      "prev . next"
+      ". position end";
     grid-template-columns: 3rem auto 3rem;
     grid-template-rows: 3rem auto 3rem;
     width: 1024px;
     height: 400px;
-    margin:  0 auto;
-
+    margin: 0 auto;
+  
     button:first-of-type {
-        grid-area: prev;
-        
+      grid-area: prev;
+      background-color: transparent;
+      border: none;
+      font-size: 5rem;
+      position: relative;
+      filter: invert(1);
     }
-
+  
     button:last-of-type {
-        grid-area: next;
-    }
-
+      grid-area: next;
+      background-color: transparent;
+      border: none;
+      font-size: 5rem;
+      position: relative;
+     
+      filter: invert(1);    }
+  
     div {
-        grid-area: position;
+      grid-area: position;
     }
-
+  
     img {
-        grid-area: start /start/end/ end;
-        object-fit: cover;
-        width: 100%; 
-  height: 100%;
+      grid-area: start /start/end/ end;
+      object-fit: cover;
+      width: 100%; 
+      height: 100%;
+      fill: white;
     }
-}
+  }
+  

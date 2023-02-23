@@ -1,6 +1,7 @@
 import React, {useState} from 'react'; 
 import "./carousel.scss";
-
+import arrowForward from "./arrow_forward.svg";
+import arrowBack from "./arrow_back.svg";
 export default function Carousel({images}) {
     const  qty = images.length;
     const [position, setPosition] = useState(0);
@@ -12,9 +13,13 @@ export default function Carousel({images}) {
     }
     return (
     <aside className="carousel">
-    <img src={images[position]} alt='' />
-    <button onClick={()=>changeImage(-1)}>Previous</button>
-    <button onClick={()=>changeImage(1)}>next</button>
+    <img src={images[position]} alt="" />
+      <button className="carousel__button" onClick={() => changeImage(-1)}>
+        <img src={arrowBack} alt="précédent" />
+      </button>
+      <button className="carousel__button" onClick={() => changeImage(1)}>
+        <img src={arrowForward} alt="suiveant" />
+      </button>
     <div>{position + 1} / {qty}</div>
     </aside>
     );
