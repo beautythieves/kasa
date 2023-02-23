@@ -2,7 +2,7 @@
 import Carousel from 'components/Carousel/Carousel';
 import { useParams } from 'react-router-dom';
 import { getAccomodation } from 'services/dataManager';
-
+import Rating from 'components/Rating/Rating';
 export default function AccomodationDetails() {
   const { id } = useParams();
   const accommodationDetails = getAccomodation(id);
@@ -11,6 +11,7 @@ export default function AccomodationDetails() {
     <div>
       <Carousel images={accommodationDetails.pictures} />
       <h1>{accommodationDetails.title}</h1>
+      <h2>{accommodationDetails.location}</h2>
       <ul>
         {accommodationDetails.tags.map((tag, index) => (
           <li key={index}>{tag}</li>
@@ -20,6 +21,7 @@ export default function AccomodationDetails() {
       <div className="host_info">
         <img src={accommodationDetails.host.picture} alt={accommodationDetails.host.name} />
         <p> {accommodationDetails.host.name}</p>
+        <Rating rating={accommodationDetails.rating} />
       </div>
     </div>
     
