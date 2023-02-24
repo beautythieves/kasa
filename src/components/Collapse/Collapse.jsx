@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import "./Collapse.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
+ 
 /**
  * [default description]
  *
@@ -9,17 +12,21 @@ import "./Collapse.scss";
  *
  * @return  {Function}           [return description]
  */
-export default function Collapse({title, content}) {
+ const angleDown = <FontAwesomeIcon icon={faAngleDown} />
+ const angleUp = <FontAwesomeIcon icon={faAngleUp} /> 
+ export default function Collapse({title, content}) {
     const [isExpanded, setIsExpanded] = useState(false);
+  
     return (
-        <article className="collapse">
-        <h1 onClick={() => setIsExpanded(!isExpanded)}>
-        {title} <span className="arrow">{isExpanded ? "\u2303" : "\u2304"}</span>
+      <article className="collapse">
+        <h1 className="collapse_title" onClick={() => setIsExpanded(!isExpanded)}>
+          {title} 
+          <span className="arrow">{isExpanded ? angleUp : angleDown}</span>
         </h1>
         {showContent(content, isExpanded)}
-        </article>
+      </article>
     )
-}
+  }
 
 function showContent(content, isExpanded) {
     if (isExpanded) {
