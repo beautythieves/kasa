@@ -1,16 +1,13 @@
-.collapse {
+.collapse_title {
   background-color: #ff5656;
   color: #fff;
-  border-radius: 5px;
-  padding: 0 15px;
-  cursor: pointer;
-}
-
-.collapse_title {
   font-size: 2rem;
   font-weight: 700;
   margin: 0 auto;
   padding: 10px 0;
+  border-radius: 5px;
+  padding: 0 15px;
+  cursor: pointer;
 }
 
 .collapse_content {

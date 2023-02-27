@@ -1,20 +1,47 @@
 header {
-  display: flex;
-  align-items: center;
-  margin: 100px 200px;
-}
-/* navbar must be centered*/
-nav {
-  margin-left: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-/* navbar style*/
-.navbar > a {
-  color: #ff6060;
-  font-size: 24px;
-  margin-left: 50px;
-}
+    display: flex;
+    align-items: center;
+    margin: 40px 10px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  
+    img {
+      width: 150px;
+      margin-right: auto;
+    }
+  
+    nav {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      width: 100%;
+  
+      a {
+        color: #ff6060;
+        font-size: 18px;
+        margin: 0 10px;
+      }
+    }
+  
+    @media screen and (min-width: 991px) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+  
+      img {
+        width: auto;
+        margin-right: 0;
+      }
+  
+      nav {
+        margin-top: 0;
+        width: auto;
+  
+        a {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  

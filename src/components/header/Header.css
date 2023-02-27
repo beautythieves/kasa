@@ -1,22 +1,41 @@
 header {
   display: flex;
   align-items: center;
-  margin: 100px 200px;
+  margin: 40px 10px;
+  padding: 0 20px;
+  flex-wrap: wrap;
 }
-
-/* navbar must be centered*/
-nav {
-  margin-left: auto;
+header img {
+  width: 150px;
+  margin-right: auto;
+}
+header nav {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  background-color: #f1f1f1;
-  padding: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  width: 100%;
 }
-
-/* navbar style*/
-.navbar > a {
+header nav a {
   color: #ff6060;
-  font-size: 24px;
-  margin-left: 50px;
+  font-size: 18px;
+  margin: 0 10px;
+}
+@media screen and (min-width: 991px) {
+  header {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header img {
+    width: auto;
+    margin-right: 0;
+  }
+  header nav {
+    margin-top: 0;
+    width: auto;
+  }
+  header nav a {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=Header.css.map */
