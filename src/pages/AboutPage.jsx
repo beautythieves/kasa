@@ -7,9 +7,9 @@ import "./AboutPage.scss";
 
 export default function About() {
   return (
-    <div className="about-container">
+    <div className="about_container">
       <img src={backgroundImage} alt="background" />
-      <div className="content">
+      <div className="about_collapse_container">
         <Collapse
           title="Fiabilité"
           content="Les annonces en ligne sur notre site sont vérifiées en permanence. Nous veillons à la conformité des photographies des logements et au sérieux des annonceurs."

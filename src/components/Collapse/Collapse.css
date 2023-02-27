@@ -1,3 +1,7 @@
+.collapse {
+  margin-bottom: 20px;
+}
+
 .collapse_title {
   background-color: #ff5656;
   color: #fff;
@@ -8,15 +12,17 @@
   border-radius: 5px;
   padding: 0 15px;
   cursor: pointer;
+  width: 100%;
 }
 
-.collapse_content {
+.collapse > content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   padding: 10px 0;
+  color: 1;
 }
 
 .collapse_content li {
