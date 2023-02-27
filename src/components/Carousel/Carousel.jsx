@@ -20,7 +20,7 @@ export default function Carousel({images}) {
       <button className="carousel__button" onClick={() => changeImage(1)}>
         <img src={arrowForward} alt="suiveant" />
       </button>
-    <div>{position + 1} / {qty}</div>
+    <div className ="carousel_number">{position + 1} / {qty}</div>
     </aside>
     );
 }

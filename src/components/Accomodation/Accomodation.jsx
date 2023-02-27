@@ -22,7 +22,16 @@ export default function AccomodationDetails() {
           ))}
         </ul>
       </div>
-        <div className= "accomodation_details_collapse">
+        
+      <div className="host_info">
+        <div className="host_name_picture">
+          <img src={accommodationDetails.host.picture} alt={accommodationDetails.host.name} />
+          <p> {accommodationDetails.host.name}</p>
+        
+        </div>
+          <Rating rating={accommodationDetails.rating} />
+      </div>
+      <div className= "accomodation_details_collapse">
       <Collapse
           title="Description"
           content={accommodationDetails.description}
@@ -32,14 +41,6 @@ export default function AccomodationDetails() {
           content={accommodationDetails.equipments}
         />
         </div>
-      <div className="host_info">
-        <div className="host_name_picture">
-          <img src={accommodationDetails.host.picture} alt={accommodationDetails.host.name} />
-          <p> {accommodationDetails.host.name}</p>
-        
-        </div>
-          <Rating rating={accommodationDetails.rating} />
-      </div>
     </div>
     
   );

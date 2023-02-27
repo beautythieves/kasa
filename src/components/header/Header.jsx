@@ -4,7 +4,7 @@ import logo from "./logoKasa.png";
 /* import NavLink from react-router-dom */
 import { NavLink } from "react-router-dom";
 /*import header css */
-import "./Header.css";
+import "./Header.scss";
 /* create a header component */
 
 export default function Header() {
