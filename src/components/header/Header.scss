@@ -1,9 +1,8 @@
+@import '../../styles/variables.scss';
 header {
     display: flex;
     align-items: center;
-    margin: 40px 10px;
-    padding: 0 20px;
-    flex-wrap: wrap;
+    margin: $header-margin;
   
     img {
       width: 150px;
@@ -13,14 +12,16 @@ header {
     nav {
       display: flex;
       align-items: center;
-      margin-top: 20px;
+      margin-top: $nav-margin-top;
       flex-wrap: wrap;
       width: 100%;
+      justify-content: flex-end;
   
       a {
-        color: #ff6060;
-        font-size: 18px;
+        color: $primary-color;
+        font-size: $nav-font-size;
         margin: 0 10px;
+        text-transform: uppercase;
       }
     }
   
@@ -28,6 +29,7 @@ header {
       flex-wrap: nowrap;
       justify-content: space-between;
       align-items: center;
+      margin: $header-margin-desktop;
   
       img {
         width: auto;
@@ -39,7 +41,10 @@ header {
         width: auto;
   
         a {
-          font-size: 24px;
+          font-size: $nav-font-size-desktop;
+          padding-left: 40px;
+          text-transform: none;
+
         }
       }
     }
