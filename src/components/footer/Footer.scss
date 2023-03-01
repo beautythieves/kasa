@@ -8,5 +8,17 @@
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-}
+  img {
+    max-height: 50%;
+    max-width: 100%;
+    margin: auto;
+  }
   
+  .allrights_img {
+    max-height: 50%;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+}
