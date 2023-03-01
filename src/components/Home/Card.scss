@@ -1,11 +1,13 @@
-/* set size of images*/
+@import '../../styles/variables.scss';
+
+
 .accomodation_card {
   width: 340px;
   height: 340px;
   object-fit: cover;
   box-shadow: 1px 1px 5px rgb(104, 98, 98);
-  border-radius: 5px;
-  margin: 10px;
+  border-radius: 10px;
+  margin: 50px;
 }
 
 .accomodation_card > a {
@@ -34,8 +36,26 @@
   right: 0;
   margin: 0;
   padding: 20px;
-  color: #fff;
-  font-size: 1.2rem;
+  color: $secondary-color;
+  font-size: 18px;
   text-align: left;
+  border-radius: 10px;
+  Line-height:25.67px ;
   background: linear-gradient(0deg,rgba(0,0,0,.9) 10%,rgba(0,212,255,0.1) 90%);
+}
+@media (max-width: 375px) and (max-height: 812px) {
+  .accomodation_card {
+    width: 335px;
+    height: 255px;
+    margin: 20px;
+  }
+  
+  .accomodation_img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .accomodation_title {
+    font-size: 14px;
+    padding: 10px;
+  }
 }

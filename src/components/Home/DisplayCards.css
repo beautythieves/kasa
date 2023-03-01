@@ -6,6 +6,7 @@
   padding: 30px;
   margin: 200px;
   min-height: 300px;
+  gap:20px;
 }
 
 .accomodations > li {
@@ -13,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  /* margin: 20px; */
   width: 300px;
 }
 

@@ -8,9 +8,9 @@ import DisplayCards from "../components/Home/DisplayCards";
 /* home page */
 export default function Home() {
   return (
-    <div>
+    <main>
       <SubHeader />
       <DisplayCards />
-    </div>
+    </main>
   );
 }

@@ -11,40 +11,44 @@ export default function AccomodationDetails() {
 
   return (
     <div className="accomodation_details_container">
-      <Carousel images={accommodationDetails.pictures} />
-      <div className="accomodation_details">
-        <h1 className="accomodation_details_title">
-          {accommodationDetails.title}
-        </h1>
-        <h2 className="accomodation_details_location">
-          {accommodationDetails.location}
-        </h2>
-        <ul className="tags">
-          {accommodationDetails.tags.map((tag, index) => (
-            <li key={index}>{tag}</li>
-          ))}
-        </ul>
+      <div className="carousel_wrapper">
+        <Carousel images={accommodationDetails.pictures} />
       </div>
-
-      <div className="host_info">
-        <div className="host_name_picture">
-          <img
-            src={accommodationDetails.host.picture}
-            alt={accommodationDetails.host.name}
-          />
-          <p> {accommodationDetails.host.name}</p>
+      <div className="accomodation_details_content">
+        <div className="accomodation_details">
+          <h1 className="accomodation_details_title">
+            {accommodationDetails.title}
+          </h1>
+          <h2 className="accomodation_details_location">
+            {accommodationDetails.location}
+          </h2>
+          <ul className="tags">
+            {accommodationDetails.tags.map((tag, index) => (
+              <li key={index}>{tag}</li>
+            ))}
+          </ul>
         </div>
-        <Rating rating={accommodationDetails.rating} />
-      </div>
-      <div className="accomodation_details_collapse">
-        <Collapse
-          title="Description"
-          content={accommodationDetails.description}
-        />
-        <Collapse
-          title="&#xC9;quipement"
-          content={accommodationDetails.equipments}
-        />
+
+        <div className="host_info">
+          <div className="host_name_picture">
+            <img
+              src={accommodationDetails.host.picture}
+              alt={accommodationDetails.host.name}
+            />
+            <p> {accommodationDetails.host.name}</p>
+          </div>
+          <Rating rating={accommodationDetails.rating} />
+        </div>
+        <div className="accomodation_details_collapse">
+          <Collapse
+            title="Description"
+            content={accommodationDetails.description}
+          />
+          <Collapse
+            title="&#xC9;quipement"
+            content={accommodationDetails.equipments}
+          />
+        </div>
       </div>
     </div>
   );

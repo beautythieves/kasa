@@ -41,12 +41,12 @@ function showContent(content, isExpanded) {
 
 function templateArray(content) {
     return (
-        <ul>
+        <ul className="collapse_content">
             {content.map((item) => <li>{item}</li>)}
         </ul>
     );
 }
 
 function templateString(content) {
-    return <p>{content}</p>;
+    return <p className= "content_p">{content}</p>;
 }

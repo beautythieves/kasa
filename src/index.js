@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 /*import style.scss from styles/style.csss*/
-import "./styles/style.css";
+import "./styles/style.scss";
 import "index.css" 
 import reportWebVitals from "./reportWebVitals";
 import Header from "./components/header/Header";

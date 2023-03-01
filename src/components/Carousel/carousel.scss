@@ -1,49 +1,48 @@
 @import '../../styles/variables.scss';
 
 .carousel {
-    display: grid;
-    place-items: center;
-    grid-template-areas: 
-      "start . ."
-      "prev . next"
-      ". position end";
-    grid-template-columns: 3rem auto 3rem;
-    grid-template-rows: 3rem auto 3rem;
-    width: 1024px;
-    height: 400px;
-    margin: 0 auto;
-  
-    button:first-of-type {
-      grid-area: prev;
-      background-color: transparent;
-      border: none;
-      font-size: 5rem;
-      position: relative;
-      filter: invert(1);
-    }
-  
-    button:last-of-type {
-      grid-area: next;
-      background-color: transparent;
-      border: none;
-      font-size: 5rem;
-      position: relative;
-     
-      filter: invert(1);    }
-  
-    div {
-      grid-area: position;
-    }
-  
-    img {
-      grid-area: start /start/end/ end;
-      object-fit: cover;
-      width: 100%; 
-      height: 100%;
-      fill: $secondary-color;
-      border-radius: 25px;
-    }
+  display: grid;
+  place-items: center;
+  grid-template-areas: 
+    "start . ."
+    "prev . next"
+    ". position end";
+  grid-template-columns: 3rem auto 3rem;
+  grid-template-rows: 3rem auto 3rem;
+  width: 1024px;
+  margin: 0 auto;
+
+  button:first-of-type {
+    grid-area: prev;
+    background-color: transparent;
+    border: none;
+    font-size: 5rem;
+    filter: invert(1);
   }
-  .carousel_number{
-    color: $secondary-color;
+
+  button:last-of-type {
+    grid-area: next;
+    background-color: transparent;
+    border: none;
+    font-size: 5rem;
+    position: relative;
+    filter: invert(1);
   }
+
+  div {
+    grid-area: position;
+  }
+
+  img {
+    grid-area: start /start/end/ end;
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    fill: $secondary-color;
+    border-radius: 25px;
+  }
+}
+
+.carousel_number {
+  color: $secondary-color;
+}

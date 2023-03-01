@@ -1,8 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+@import-normalize;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+:root {
+  --contentWidth: 100vw;
+  @media screen and (min-width: 768px) {
+    --contentWidth: 768px;
   }
-  
+  // @media screen and (min-width: 1240px) {
+  //   --contentWidth: 1240px;
+  // }
+  @media screen and (min-width: 1350px) {
+    --contentWidth: 1350px;
+  }
+}
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: grid;
+  width: 100vw;
+  min-height: 100vh;
+  grid-template-areas:
+    ". header ."
+    ". main ."
+    "footer footer footer";
+  grid-template-columns: auto var(--contentWidth) auto;
+
+  & > header {
+    grid-area: header;
+  }
+  & > main {
+    grid-area: main;
+  }
+  & > footer {
+    grid-area: footer;
+  }
+}

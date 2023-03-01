@@ -7,7 +7,7 @@ import "./AboutPage.scss";
 
 export default function About() {
   return (
-    <div className="about_container">
+    <main className="about_container">
       <img src={backgroundImage} alt="background" />
       <div className="about_collapse_container">
         <Collapse
@@ -27,6 +27,6 @@ export default function About() {
           content="Kasa est une agence de voyage qui vous propose des séjours à la carte. Chaque annonceur doit avoir un profil certifié et chaque logement répond aux critères de sécurité."
         />
       </div>
-    </div>
+    </main>
   );
 }
