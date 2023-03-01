@@ -1,8 +1,12 @@
-/* image footer size*/
-footer >img {
-    width: 100%;
+.footer{
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 209px;
-    object-fit: cover;
-    
-    
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
+  
