@@ -1,41 +1,36 @@
 @import "../../styles/variables.scss";
 
 .subHeader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 223px;
-  width: 1240px;
-
-  &-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 223px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./backgroundSubHeader.png);    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    z-index: -1;
-    filter: brightness (60%);
-    border-radius: 25px;
-  }
-
+  display: grid;
+  place-items: center;
+  justify-items: center;
+  height: 111px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./backgroundSubHeader.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  margin: 0 20px 20px 20px;
   &-text {
-    font-size: $subHeader-font-size-desktop;
-    font-weight: $subHeader-font-weight;
+    font-size: $subHeader-font-size-mobile;
+    font-weight: $subHeader-font-weight-mobile;
     color: $secondary-color;
     margin: 0;
     padding: 20px;
-    width: 705px;
+    max-width: 705px;
+    text-align: center;
   }
 
-  @media screen and (max-width: 1240px) {
+  @media screen and (min-width: 768px) {
+    height: 350px;
+    max-height: 50vh;
+    padding: 0 40px;
+    align-content: center;
+
     &-text {
-      width: 100%;
-      text-align: center;
-      padding: 20px 0;
+      font-size: $subHeader-font-size-desktop;
+      padding: 0;
+      text-align: left;
     }
   }
 }

@@ -10,7 +10,9 @@ import "./Header.scss";
 export default function Header() {
   return (
     <header>
+    <div className="header-logo">
       <img className="header-img" src={logo} alt="kasa logo" />
+    </div>
       <nav className="navbar">
         <NavLink to="/">Accueil</NavLink>
         <NavLink to="/about">&Agrave; propos</NavLink>

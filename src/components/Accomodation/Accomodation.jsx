@@ -39,7 +39,9 @@ export default function AccomodationDetails() {
           </div>
           <Rating rating={accommodationDetails.rating} />
         </div>
-        <div className="accomodation_details_collapse">
+        
+      </div>
+      <div className="accomodation_details_collapse">
           <Collapse
             title="Description"
             content={accommodationDetails.description}
@@ -49,7 +51,6 @@ export default function AccomodationDetails() {
             content={accommodationDetails.equipments}
           />
         </div>
-      </div>
     </div>
   );
 }

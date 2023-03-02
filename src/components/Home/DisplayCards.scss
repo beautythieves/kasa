@@ -1,11 +1,11 @@
 .accomodations {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  margin: 100px;
-  min-height: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 30px;
+  justify-items: center;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  padding-left:0;
 }
 
 .accomodations > li {
@@ -19,10 +19,11 @@
 
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .accomodations {
     margin: 0;
     padding: 20px;
+    background-color: white;
   }
 
   .accomodations > li {

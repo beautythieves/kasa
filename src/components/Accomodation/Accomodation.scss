@@ -12,12 +12,12 @@
 
 .accomodation_details_content {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .accomodation_details {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 
   .accomodation_details_title {
     font-size: 2rem;
@@ -28,7 +28,6 @@
   .tags {
     list-style-type: none;
     display: flex;
-    margin: 0 10px 10px;
     padding: 5px 10px;
   }
 }
@@ -38,7 +37,7 @@
   margin-bottom: 10px;
   padding: 5px 10px;
   background-color: $primary-color;
-  border-radius: 5px;
+  border-radius: 10px;
   color: $secondary-color;
 }
 

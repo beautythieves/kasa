@@ -1,52 +1,58 @@
+/* import variables */
 @import '../../styles/variables.scss';
+
+/* header styles for smaller devices */
 header {
+  display: flex;
+  align-items: center;
+  margin: $header-margin;
+
+  img {
+    width: 130px;
+    margin-right: auto;
+  }
+
+  nav {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+    
+
+    a {
+      color: $primary-color;
+      font-size: $nav-font-size;
+      margin: 0 10px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* header styles for larger devices */
+@media screen and (min-width: 768px) {
+  header {
     display: flex;
     align-items: center;
-    margin: $header-margin;
-  
-    img {
-      width: 150px;
-      margin-right: auto;
-    }
-  
-    nav {
-      display: flex;
-      align-items: center;
-      margin-top: $nav-margin-top;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: flex-end;
-  
-      a {
-        color: $primary-color;
-        font-size: $nav-font-size;
-        margin: 0 10px;
-        text-transform: uppercase;
-      }
-    }
-  
-    @media screen and (min-width: 991px) {
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      align-items: center;
-      margin: $header-margin-desktop;
-  
-      img {
-        width: auto;
-        margin-right: 0;
-      }
-  
-      nav {
-        margin-top: 0;
-        width: auto;
-  
-        a {
-          font-size: $nav-font-size-desktop;
-          padding-left: 40px;
-          text-transform: none;
+    color: $primary-color;
+    justify-content: space-between;
 
-        }
+    img {
+      width: auto;
+      margin-right: 0;
+    }
+
+    nav {
+      margin-top: 0;
+      width: auto;
+
+      a {
+        font-size: 24px;
+        color: $primary-color;
+        padding-left: 40px;
+        text-transform: none;
+        padding-right: 90px;
       }
     }
   }
-  
+}
