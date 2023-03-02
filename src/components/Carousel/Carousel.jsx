@@ -13,12 +13,12 @@ export default function Carousel({images}) {
     }
     return (
     <aside className="carousel">
-    <img src={images[position]} alt="" />
-      <button className="carousel__button" onClick={() => changeImage(-1)}>
-        <img src={arrowBack} alt="précédent" />
+<img src={images[position]} alt="" className="carousel__image" />
+        <button className="carousel__button" onClick={() => changeImage(-1)}>
+        <img src={arrowBack} alt="précédent" className='arrowSVG' />
       </button>
       <button className="carousel__button" onClick={() => changeImage(1)}>
-        <img src={arrowForward} alt="suiveant" />
+        <img src={arrowForward} alt="suivant" className='arrowSVG'/>
       </button>
     <div className ="carousel_number">{position + 1} / {qty}</div>
     </aside>

@@ -1,6 +1,6 @@
 @import "../../styles/variables.scss";
-.accomodation_details_container{
-  grid-area: 2 / 1 / 4 / 4; 
+.accomodation_details_container {
+  grid-area: 2 / 1 / 4 / 4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
   flex-direction: column;
 
   .accomodation_details_title {
-    font-size: 2rem;
+    font-size: 36px;
     font-weight: 700;
     padding: 10px 0;
     color: $primary-color;
@@ -56,4 +56,62 @@
 
 .host_name_picture > img {
   border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .accomodation_details_container {
+    grid-area: 2 / 1 / 4 / 4;
+  }
+  .accomodation_details_content {
+    flex-direction: column;
+  }
+  .accomodation_details_collapse {
+    gap: 20px;
+    flex-direction:column;
+  }
+  .collapse_title{
+    font-size: 13px !important;
+    font-weight: 500!important;
+  }
+  .accomodation_details_title {
+    font-size: 18px !important;
+    font-weight: 500!important;
+  }
+  .accomodation_details_location {
+    font-size: 14px !important;
+    font-weight: 500!important;
+
+  }
+  .tags li {
+    font-size: 10px !important;
+  }
+  .host_info {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .host_name_picture {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .host_name_picture > img {
+    height: 32px;
+    width: 32px;
+  }
+  .host_name_picture > p {
+    margin-right: 10px;
+    color: $primary-color;
+    font-size: 12px !important;
+  }
+  .rating {
+    margin-top: 0; // Remove top margin
+    align-self: flex-start !important; // Align vertically with other information
+  }
+
+  .rating > img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
 }
