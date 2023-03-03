@@ -1,13 +1,58 @@
 @import "../../styles/variables.scss";
+
 .accomodation_details_container {
   grid-area: 2 / 1 / 4 / 4;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   background-color: $secondary-color;
   padding: 20px;
   border-radius: 10px;
+
+  .accomodation_title_location_host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .accomodation_titleAndLocation {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .accomodation_details_title {
+        font-size: 36px !important;
+        font-weight: 500;
+        color: $primary-color !important;
+        text-align: center;
+      }
+
+      .accomodation_details_location {
+        color: $primary-color;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
+    .host_details {
+      display: flex;
+      align-items: center;
+
+      .host_id {
+        color: $primary-color;
+        font-weight: 500;
+        margin-right: 10px;
+        font-size: 18px;
+      }
+
+      .host_name_picture {
+        border-radius: 50%;
+        height: 64px;
+        width: 64px;
+      }
+    }
+  }
 }
 
 .accomodation_details_content {
@@ -15,21 +60,10 @@
   align-items: center;
   justify-content: center;
 }
+
 .accomodation_details {
   display: flex;
   flex-direction: column;
-
-  .accomodation_details_title {
-    font-size: 36px;
-    font-weight: 700;
-    padding: 10px 0;
-    color: $primary-color;
-  }
-  .tags {
-    list-style-type: none;
-    display: flex;
-    padding: 5px 10px;
-  }
 }
 
 .tags li {
@@ -39,79 +73,83 @@
   background-color: $primary-color;
   border-radius: 10px;
   color: $secondary-color;
+  font-size: 14px;
+  font-weight: 500;
+  width: 115px;
+  height: 25px;
 }
 
 .accomodation_details_collapse {
   align-items: flex-start;
   display: flex;
-  flex-wrap: wrap;
   gap: 60px;
   justify-content: center;
   margin-bottom: 30px;
 }
-
+.collapse{
+  width: 50%;
+}
 .accomodation_details_location {
   color: $primary-color;
 }
-
-.host_name_picture > img {
-  border-radius: 50%;
+.tags_and_rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.tags {
+  list-style-type: none;
+  display: flex;
+  padding: 50px 10px;
 }
 
 @media screen and (max-width: 768px) {
   .accomodation_details_container {
     grid-area: 2 / 1 / 4 / 4;
+    padding: 10px;
   }
+
   .accomodation_details_content {
     flex-direction: column;
   }
+
   .accomodation_details_collapse {
     gap: 20px;
-    flex-direction:column;
+    flex-direction: column;
   }
-  .collapse_title{
+
+  .collapse_title {
     font-size: 13px !important;
-    font-weight: 500!important;
+    font-weight: 500 !important;
   }
+
   .accomodation_details_title {
     font-size: 18px !important;
-    font-weight: 500!important;
+    font-weight: 500 !important;
+    text-align: center;
   }
+
   .accomodation_details_location {
     font-size: 14px !important;
-    font-weight: 500!important;
-
+    font-weight: 500 !important;
+    text-align: center;
   }
+
   .tags li {
     font-size: 10px !important;
   }
+
   .host_info {
     display: flex;
     flex-direction: row-reverse;
   }
+
   .host_name_picture {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-  }
-  .host_name_picture > img {
-    height: 32px;
-    width: 32px;
-  }
-  .host_name_picture > p {
-    margin-right: 10px;
-    color: $primary-color;
-    font-size: 12px !important;
-  }
-  .rating {
-    margin-top: 0; 
-    align-self: flex-start !important; 
-  }
-
-  .rating > img {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
   }
 }
