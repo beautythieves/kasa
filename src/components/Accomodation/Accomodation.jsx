@@ -35,9 +35,9 @@ export default function AccomodationDetails() {
               <li key={index}>{tag}</li>
             ))}
           </ul>
-
+</div>
           <Rating rating={accommodationDetails.rating} />
-        </div>
+        
       </div>
       <div className="accomodation_details_collapse">
         <Collapse
