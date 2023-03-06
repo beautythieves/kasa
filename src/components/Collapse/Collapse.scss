@@ -1,33 +1,40 @@
 @import '../../styles/variables.scss';
 .collapse{
   margin-bottom: 20px;
+  display:flex;
+  flex-direction: column;
+background-color: #F6F6F6;
+align-items:center;
 
 }
 .collapse_title{
   background-color: $primary-color;
   color: $secondary-color;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     margin: 0 auto;
-    padding: 10px 0;
-    border-radius: 5px;
+    padding: 13px 0 13px 20px;
+    border-radius: 10px;
     cursor: pointer;
     width:100%;
     max-width: 700px;
     box-sizing: border-box;
     margin-left: 15px;
     margin-right: 15px;
+    display:flex;
+    justify-content: space-between;
   }
   
   .collapse_content{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin: 0 auto;
     padding: 10px 0;
-    color:$secondary-color;
+    color: $secondary-color;
     list-style-type: none;
+    text-align: left; /* Add this line */
   }
   
   .collapse_content li {
@@ -36,6 +43,7 @@
     padding: 5px 10px;
     border-radius: 5px;
     font-style: none;
+    color: $primary-color;
 }
 .content_p{
   color:$primary-color;
@@ -44,9 +52,80 @@
 .collapse h1 .arrow {
     font-size: 1.2em;
     margin-left: 0.5em;
+    padding-right:19px;
   }
   
   /* Style the arrowheads when the menu is expanded */
   .collapse h1.is-expanded .arrow {
     transform: rotate(180deg);
+  }
+  /* media queries for max 768px */
+  @media screen and (max-width: 768px) {
+    .collapse{
+      margin-bottom: 20px;
+      display:flex;
+      flex-direction: column;
+    background-color: #F6F6F6;
+    align-items:center;
+    }
+    .collapse_title{
+      background-color: $primary-color;
+      color: $secondary-color;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 auto;
+        padding: 13px 0 13px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        width:100%;
+        max-width: 700px;
+        box-sizing: border-box;
+        margin-left: 15px;
+        margin-right: 15px;
+        display:flex;
+        justify-content: space-between;
+      }
+      
+      .collapse_content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 10px 0;
+        color: $secondary-color;
+        list-style-type: none;
+        text-align: left; /* Add this line */
+      }
+      
+      .collapse_content li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-style: none;
+        color: $primary-color;
+    }
+    .content_p{
+      color:$primary-color;
+      font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
+
+    }
+    /* Style the arrowheads */
+    .collapse h1 .arrow {
+        font-size: 1.2em;
+        margin-left: 0.5em;
+        padding-right:19px;
+      }
+      
+      /* Style the arrowheads when the menu is expanded */
+      .collapse h1.is-expanded .arrow {
+        transform: rotate(180deg);
+      }
   }

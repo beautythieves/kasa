@@ -1,5 +1,22 @@
 @import "../../styles/variables.scss";
-
+.wrapper_different_device {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "title_location host"
+    "tag rating";
+}
+.rating{
+  grid-area: rating;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary-color;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
 .accomodation_details_container {
   grid-area: 2 / 1 / 4 / 4;
   display: flex;
@@ -9,11 +26,7 @@
   padding: 20px;
   border-radius: 10px;
 
-  .accomodation_title_location_host {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+ 
 
     .accomodation_titleAndLocation {
       display: flex;
@@ -21,10 +34,11 @@
       align-items: flex-start;
 
       .accomodation_details_title {
-        font-size: 36px !important;
+        font-size: 36px !important ;
         font-weight: 500;
-        color: $primary-color !important;
+        color: $primary-color!important;
         text-align: center;
+        margin-bottom: 0;
       }
 
       .accomodation_details_location {
@@ -38,6 +52,7 @@
     .host_details {
       display: flex;
       align-items: center;
+      justify-content: flex-end;
 
       .host_id {
         color: $primary-color;
@@ -52,7 +67,7 @@
         width: 64px;
       }
     }
-  }
+  
 }
 
 .accomodation_details_content {
@@ -69,7 +84,7 @@
 .tags li {
   margin-right: 10px;
   margin-bottom: 10px;
-  padding: 5px 10px;
+  padding: 10px;
   background-color: $primary-color;
   border-radius: 10px;
   color: $secondary-color;
@@ -86,11 +101,12 @@
   justify-content: center;
   margin-bottom: 30px;
 }
-.collapse{
+.collapse {
   width: 50%;
 }
 .accomodation_details_location {
   color: $primary-color;
+  margin: 0;
 }
 .tags_and_rating {
   display: flex;
@@ -102,7 +118,7 @@
 .tags {
   list-style-type: none;
   display: flex;
-  padding: 50px 10px;
+  padding: 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -110,46 +126,129 @@
     grid-area: 2 / 1 / 4 / 4;
     padding: 10px;
   }
+  .wrapper_different_device {
+    display: grid;
 
-  .accomodation_details_content {
-    flex-direction: column;
+    grid-template-areas:
+      "title_location title_location"
+      "tags tags"
+      "rating host_Id";
+  }
+  .accomodation_title_location_host {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "title_location"
+      "tags"
+      "rating_host";
   }
 
-  .accomodation_details_collapse {
-    gap: 20px;
-    flex-direction: column;
+
+  .accomodation_titleAndLocation {
+    grid-area: title_location;
   }
 
-  .collapse_title {
-    font-size: 13px !important;
-    font-weight: 500 !important;
+  .tags_and_rating {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "tags rating";
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .tags {
+    grid-area: tags;
+    margin-top: 0;
+  }
+
+  .rating {
+    grid-area: rating_host;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .host_details {
+    grid-area: rating_host;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .host_id {
+    color: $primary-color;
+    font-weight: 500;
+    margin-right: 10px;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .host_name_picture {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    margin-right: 10px;
   }
 
   .accomodation_details_title {
     font-size: 18px !important;
     font-weight: 500 !important;
-    text-align: center;
+    font-family: Montserrat;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 0;
   }
 
   .accomodation_details_location {
     font-size: 14px !important;
     font-weight: 500 !important;
     text-align: center;
+    font-family: Montserrat;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0;
   }
 
   .tags li {
     font-size: 10px !important;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: $primary-color;
+    border-radius: 10px;
+    color: $secondary-color;
+    font-weight: 500;
+    white-space: nowrap;
   }
 
-  .host_info {
-    display: flex;
-    flex-direction: row-reverse;
+  .rating > img {
+    height: 15px;
+    width: 15px;
+    left: 1.5px;
+    top: 1.5px;
+    border-radius: 0px;
+    margin-right: 5px;
   }
 
-  .host_name_picture {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
+  .accomodation_details_collapse {
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .collapse_title {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    font-family: Montserrat;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 0;
   }
 }

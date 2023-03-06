@@ -28,8 +28,9 @@ body {
     ". header ."
     ". main ."
     "footer footer footer";
-  grid-template-columns: auto var(--contentWidth) auto;
-  align-items: stretch; /* Add this line */
+    /* virer la ligne ci dessous*/
+  // grid-template-columns: auto var(--contentWidth) auto;
+  align-items: stretch; 
   & > header {
     grid-area: header;
   }

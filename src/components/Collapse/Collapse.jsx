@@ -42,7 +42,7 @@ function showContent(content, isExpanded) {
 function templateArray(content) {
     return (
         <ul className="collapse_content">
-            {content.map((item) => <li>{item}</li>)}
+            {content.map((item, index) => <li key ={index}>{item}</li>)}
         </ul>
     );
 }

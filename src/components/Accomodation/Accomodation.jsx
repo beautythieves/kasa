@@ -11,10 +11,8 @@ export default function AccomodationDetails() {
 
   return (
     <div className="accomodation_details_container">
-      <div className="carousel_wrapper">
-        <Carousel images={accommodationDetails.pictures} />
-      </div>
-      <section className="accomodation_title_location_host">
+      <Carousel images={accommodationDetails.pictures} />
+      <div className="wrapper_different_device">
         <div className="accomodation_titleAndLocation">
           <h1 className="accomodation_details_title">
             {accommodationDetails.title}
@@ -31,15 +29,15 @@ export default function AccomodationDetails() {
             alt={accommodationDetails.host.name}
           />
         </div>
-      </section>
-      <div className="tags_and_rating">
-        <ul className="tags">
-          {accommodationDetails.tags.map((tag, index) => (
-            <li key={index}>{tag}</li>
-          ))}
-        </ul>
+        <div className="tags_and_rating">
+          <ul className="tags">
+            {accommodationDetails.tags.map((tag, index) => (
+              <li key={index}>{tag}</li>
+            ))}
+          </ul>
 
-        <Rating rating={accommodationDetails.rating} />
+          <Rating rating={accommodationDetails.rating} />
+        </div>
       </div>
       <div className="accomodation_details_collapse">
         <Collapse

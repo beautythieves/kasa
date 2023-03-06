@@ -3,6 +3,8 @@
 .carousel {
   display: grid;
   place-items: center;
+  justify-content: center;
+  justify-items: center;
   grid-template-areas:
     "start . ."
     "prev . next"
@@ -45,9 +47,10 @@
     height: 415px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1350px) {
     .carousel {
-      grid-template-rows: 2rem 10rem 2rem;
+      grid-template-rows: 2fr 10fr 2fr;
+      width: 100%;
     }
 
     button:first-of-type {
@@ -78,3 +81,4 @@
     color: $secondary-color;
   }
 }
+
