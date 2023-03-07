@@ -7,6 +7,7 @@ import "./DisplayCards.scss";
  */
 export default function DisplayCards() {
     return (
+        <div className="home_accomodations_container">
         <ul className="accomodations" >
         {accomodations.map((accomodation) => (
             <Card
@@ -17,5 +18,6 @@ export default function DisplayCards() {
             />
         ))}
         </ul>
+        </div>
     );
     }

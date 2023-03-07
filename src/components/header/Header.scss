@@ -6,6 +6,7 @@ header {
   display: flex;
   align-items: center;
   margin: $header-margin;
+  width:370px;
 
   img {
     width: 130px;
@@ -17,7 +18,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     
 
     a {
@@ -32,10 +33,12 @@ header {
 /* header styles for larger devices */
 @media screen and (min-width: 768px) {
   header {
+    width: 1240px;
     display: flex;
     align-items: center;
     color: $primary-color;
     justify-content: space-between;
+    margin: 20px 0!important;
 
     img {
       width: auto;
@@ -45,13 +48,14 @@ header {
     nav {
       margin-top: 0;
       width: auto;
+      gap:40px;
 
       a {
         font-size: 24px;
         color: $primary-color;
-        padding-left: 40px;
         text-transform: none;
-        padding-right: 90px;
+        padding-left:30px;
+        margin:0;
       }
     }
   }

@@ -1,11 +1,15 @@
+.home_accomodations_container{
+  width: 1240px;
+  display: grid;
+}
 .accomodations {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
   justify-items: center;
   background-color: #F6F6F6;
   border-radius: 25px;
-  padding-left:0;
+  padding:56px 50px;
 }
 
 .accomodations > li {
@@ -20,10 +24,19 @@
 
 
 @media screen and (max-width: 768px) {
+  .home_accomodations_container{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right:0;
+  }
   .accomodations {
     margin: 0;
     padding: 20px;
     background-color: white;
+    grid-gap:0;
   }
 
   .accomodations > li {

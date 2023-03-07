@@ -12,7 +12,8 @@ export default function About() {
       <div className="about_collapse_container">
         <Collapse
           title="Fiabilité"
-          content="Les annonces en ligne sur notre site sont vérifiées en permanence. Nous veillons à la conformité des photographies des logements et au sérieux des annonceurs."
+          content="Les annonces postées sur Kasa garantissent une fiabilité totale.
+          Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
         />
         <Collapse
           title="Respect"
@@ -20,11 +21,12 @@ export default function About() {
         />
         <Collapse
           title="Service"
-          content="Nos équipes se tiennent à votre disposition pour répondre à toutes vos questions de 8h à 20h tous les jours."
+          content="Nos équipes se tiennent à votre disposition pour vous forunir une expérience parfaite. N'hésitez-pas à nous contacter pour toute question ou suggestion."
         />
         <Collapse
-          title="Responsabilité"
-          content="Kasa est une agence de voyage qui vous propose des séjours à la carte. Chaque annonceur doit avoir un profil certifié et chaque logement répond aux critères de sécurité."
+          title="Sécurité"
+          content="La sécurité est une priorité pour Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque 
+          logmeent correspond à des critères de sécurité stricts. En laissant une note et un commentaire, vous contribuez à la sécurité de la communauté Kasa."
         />
       </div>
     </main>

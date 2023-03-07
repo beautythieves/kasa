@@ -6,16 +6,15 @@
   grid-template-areas:
     "title_location host"
     "tag rating";
+  width: 1240px;
 }
-.rating{
+.rating {
   grid-area: rating;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   background-color: $secondary-color;
-  padding: 20px;
   border-radius: 10px;
-  margin: 20px;
   img {
     height: 24px;
     width: 24px;
@@ -26,55 +25,58 @@
   grid-area: 2 / 1 / 4 / 4;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center !important;
   background-color: $secondary-color;
   padding: 20px;
   border-radius: 10px;
 
- 
+  .accomodation_titleAndLocation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-    .accomodation_titleAndLocation {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-
-      .accomodation_details_title {
-        font-size: 36px !important ;
-        font-weight: 500;
-        color: $primary-color!important;
-        text-align: center;
-        margin-bottom: 0;
-      }
-
-      .accomodation_details_location {
-        color: $primary-color;
-        text-align: center;
-        font-size: 18px;
-        font-weight: 500;
-      }
+    .accomodation_details_title {
+      font-size: 36px;
+      font-weight: 500;
+      color: $primary-color !important;
+      text-align: left;
+      margin-bottom: 0;
     }
 
-    .host_details {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-
-      .host_id {
-        color: $primary-color;
-        font-weight: 500;
-        margin-right: 10px;
-        font-size: 18px;
-      }
-
-      .host_name_picture {
-        border-radius: 50%;
-        height: 64px;
-        width: 64px;
-      }
+    .accomodation_details_location {
+      color: $primary-color;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
     }
-  
+  }
+
+  .host_details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .host_id {
+      color: $primary-color;
+      font-weight: 500;
+      margin-right: 10px;
+      font-size: 18px;
+      text-align: right;
+    }
+
+    .host_name_picture {
+      border-radius: 50%;
+      height: 64px;
+      width: 64px;
+    }
+  }
 }
-
+.host_name_container {
+  height: 52px;
+  width: 93px;
+  display: flex;
+  align-items: center;
+}
 .accomodation_details_content {
   display: flex;
   align-items: center;
@@ -97,6 +99,9 @@
   font-weight: 500;
   width: 115px;
   height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .accomodation_details_collapse {
@@ -107,7 +112,7 @@
   margin-bottom: 30px;
 }
 .collapse {
-  width: 50%;
+  width: 100%;
 }
 .accomodation_details_location {
   color: $primary-color;
@@ -118,7 +123,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
 }
 .tags {
   list-style-type: none;
@@ -129,36 +133,28 @@
 @media screen and (max-width: 768px) {
   .accomodation_details_container {
     grid-area: 2 / 1 / 4 / 4;
-    padding: 10px;
+    padding: 20px;
+    width: 335px;
   }
   .wrapper_different_device {
     display: grid;
-
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
       "title_location title_location"
       "tags tags"
       "rating host_Id";
+    width: 335px;
   }
-  .accomodation_title_location_host {
-    display: grid !important;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "title_location"
-      "tags"
-      "rating_host";
-  }
-
 
   .accomodation_titleAndLocation {
     grid-area: title_location;
   }
 
   .tags_and_rating {
+    grid-area: tags;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "tags rating";
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
   }
@@ -169,59 +165,63 @@
   }
 
   .rating {
-    grid-area: rating_host;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
     margin-top: 0;
   }
 
   .host_details {
-    grid-area: rating_host;
+    grid-area: host_Id;
     margin-top: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start !important;
   }
-
+.host_name_container{
+  width:93px;
+  height:33px;
+}
   .host_id {
     color: $primary-color;
     font-weight: 500;
     margin-right: 10px;
-    font-size: 18px;
-    margin-bottom: 0;
+    font-size: 12px !important;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-top: 0;
   }
 
   .host_name_picture {
     border-radius: 50%;
-    height: 64px;
-    width: 64px;
+    height: 32px !important;
+    width: 32px !important;
     margin-right: 10px;
   }
 
   .accomodation_details_title {
     font-size: 18px !important;
-    font-weight: 500 !important;
+    font-weight: 500;
     font-family: Montserrat;
     line-height: 26px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: left !important;
     margin-bottom: 0;
   }
 
   .accomodation_details_location {
     font-size: 14px !important;
-    font-weight: 500 !important;
+    font-weight: 500;
     text-align: center;
     font-family: Montserrat;
     line-height: 20px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: left !important;
     margin-top: 0;
   }
 
   .tags li {
-    font-size: 10px !important;
+    font-size: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
     padding: 5px 10px;
@@ -230,23 +230,31 @@
     color: $secondary-color;
     font-weight: 500;
     white-space: nowrap;
+    width: 84px;
+    height: 18px;
   }
 
   .rating > img {
     height: 15px;
     width: 15px;
-    left: 1.5px;
-    top: 1.5px;
     border-radius: 0px;
     margin-right: 5px;
   }
 
   .accomodation_details_collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100% !important;
+    margin: 0 auto;
     gap: 20px;
     flex-direction: column;
     margin-top: 20px;
+    min-width: 300px !important;
   }
-
+  .collapse {
+    width: 100%;
+  }
   .collapse_title {
     font-size: 13px !important;
     font-weight: 500 !important;

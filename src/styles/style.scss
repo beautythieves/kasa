@@ -31,6 +31,7 @@ body {
     /* virer la ligne ci dessous*/
   // grid-template-columns: auto var(--contentWidth) auto;
   align-items: stretch; 
+  justify-content: space-between;
   & > header {
     grid-area: header;
   }

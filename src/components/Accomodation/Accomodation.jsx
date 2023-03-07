@@ -22,7 +22,9 @@ export default function AccomodationDetails() {
           </h2>
         </div>
         <div className="host_details">
-          <p className="host_id"> {accommodationDetails.host.name}</p>
+          <div className="host_name_container">
+            <p className="host_id"> {accommodationDetails.host.name}</p>
+          </div>
           <img
             className="host_name_picture"
             src={accommodationDetails.host.picture}
@@ -35,16 +37,15 @@ export default function AccomodationDetails() {
               <li key={index}>{tag}</li>
             ))}
           </ul>
-</div>
-          <Rating rating={accommodationDetails.rating} />
-        
+        </div>
+        <Rating rating={accommodationDetails.rating} />
       </div>
       <div className="accomodation_details_collapse">
-        <Collapse
+        <Collapse 
           title="Description"
           content={accommodationDetails.description}
         />
-        <Collapse
+        <Collapse 
           title="&#xC9;quipement"
           content={accommodationDetails.equipments}
         />
