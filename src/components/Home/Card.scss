@@ -40,13 +40,14 @@
   text-align: left;
   border-radius: 10px;
   Line-height:25.67px ;
-  background: linear-gradient(0deg,rgba(0,0,0,.9) 10%,rgba(0,212,255,0.1) 90%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
 }
 @media (max-width: 768px) {
   .accomodation_card {
     width: 335px;
     height: 255px;
-    margin: 20px;
+    margin: 20px 20px 0 20px;
   }
   
   .accomodation_img {
@@ -56,7 +57,12 @@
   }
   
   .accomodation_title {
-    font-size: 14px;
+    font-size: 18px;
     padding: 10px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+
   }
 }

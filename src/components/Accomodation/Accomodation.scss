@@ -6,7 +6,7 @@
   grid-template-areas:
     "title_location host"
     "tag rating";
-  width: 1240px;
+    padding-left: 30px;
 }
 .rating {
   grid-area: rating;
@@ -110,9 +110,10 @@
   gap: 60px;
   justify-content: center;
   margin-bottom: 30px;
+  padding-left:30px;
 }
 .collapse {
-  width: 100%;
+  width: 1024px;
 }
 .accomodation_details_location {
   color: $primary-color;
@@ -134,7 +135,7 @@
   .accomodation_details_container {
     grid-area: 2 / 1 / 4 / 4;
     padding: 20px;
-    width: 335px;
+    width: 355px;
   }
   .wrapper_different_device {
     display: grid;
@@ -145,6 +146,7 @@
       "tags tags"
       "rating host_Id";
     width: 335px;
+    padding-left: 10px;
   }
 
   .accomodation_titleAndLocation {
@@ -161,7 +163,7 @@
 
   .tags {
     grid-area: tags;
-    margin-top: 0;
+    margin: 0;
   }
 
   .rating {
@@ -245,15 +247,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100% !important;
     margin: 0 auto;
-    gap: 20px;
+    gap: 0px;
     flex-direction: column;
     margin-top: 20px;
     min-width: 300px !important;
+    padding-left:0;
+
   }
   .collapse {
-    width: 100%;
+    width: 335px;
   }
   .collapse_title {
     font-size: 13px !important;
@@ -263,5 +266,6 @@
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 0;
+    padding: 10px 0 10px 20px;
   }
 }

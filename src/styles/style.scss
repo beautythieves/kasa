@@ -29,9 +29,10 @@ body {
     ". main ."
     "footer footer footer";
     /* virer la ligne ci dessous*/
-  // grid-template-columns: auto var(--contentWidth) auto;
-  align-items: stretch; 
-  justify-content: space-between;
+  grid-template-columns: auto var(--contentWidth) auto;
+ justify-content: space-between;
+ align-items:center;
+ justify-items:center;
   & > header {
     grid-area: header;
   }

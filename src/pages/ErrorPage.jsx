@@ -4,6 +4,8 @@ import Error from '../components/Error/Error';
 
 export default  function ShowError () {
   return (
+    <main>
     <Error />
+    </main>
   );
 }

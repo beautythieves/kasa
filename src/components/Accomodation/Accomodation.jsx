@@ -1,15 +1,28 @@
 /*useParams in order to extract parameters from URL*/
 import Carousel from "components/Carousel/Carousel";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { getAccomodation } from "services/dataManager";
 import Rating from "components/Rating/Rating";
 import Collapse from "components/Collapse/Collapse";
 import "./Accomodation.scss";
+import {useEffect, useState} from "react";
 export default function AccomodationDetails() {
+  const navigate = useNavigate();
   const { id } = useParams();
-  const accommodationDetails = getAccomodation(id);
+  const [accommodationDetails, setAccommodationDetails] = useState(false);
+  useEffect(() => {
+    const result = getAccomodation(id);
+    if (!result) {
+      navigate("/error404");
+    }
+    else setAccommodationDetails(result);
+  }, [])
+  
+
+
 
   return (
+    accommodationDetails && (
     <div className="accomodation_details_container">
       <Carousel images={accommodationDetails.pictures} />
       <div className="wrapper_different_device">
@@ -51,5 +64,6 @@ export default function AccomodationDetails() {
         />
       </div>
     </div>
+    )
   );
 }
