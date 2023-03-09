@@ -5,16 +5,16 @@
   flex-direction: column;
   background-color: #f6f6f6;
   align-items: center;
-  border-radius:5px;
+  border-radius: $small-border-radius;
 }
 .collapse_title {
   background-color: $primary-color;
   color: $secondary-color;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: $font-size-big;
+  font-weight: $font-weight-medium;
   margin: 0 auto;
   padding: 13px 0 13px 20px;
-  border-radius: 10px;
+  border-radius: $med-border-radius;
   cursor: pointer;
   width: 100%;
   box-sizing: border-box;
@@ -37,17 +37,17 @@
 }
 
 .collapse_content li {
-  font-weight: 400;
-  font-size:18px;
-  border-radius: 5px;
+  font-weight: $font-weight-light;
+  font-size: $font-size-big;
+  border-radius: $small-border-radius;
   font-style: none;
   color: $primary-color;
   line-height: 25.67px;
 }
 .content_p {
-  padding-left:20px;
+  padding-left: 20px;
   color: $primary-color;
-  font-size:24px;
+  font-size: 24px;
   line-height: 34.22px;
 }
 /* Style the arrowheads */
@@ -73,11 +73,11 @@
   .collapse_title {
     background-color: $primary-color;
     color: $secondary-color;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: $font-size-big;
+    font-weight: $font-weight-medium;
     margin: 0 auto;
     padding: 13px 0 13px 20px;
-    border-radius: 10px;
+    border-radius: $med-border-radius;
     cursor: pointer;
     width: 100%;
     max-width: 700px;
@@ -107,8 +107,7 @@
     border-radius: 5px;
     font-style: none;
     color: $primary-color;
-    font-family: Montserrat;
-    font-size: 12px;
+    font-size: $font-size-small;
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0em;
@@ -116,9 +115,8 @@
   }
   .content_p {
     color: $primary-color;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: $font-size-small;
+    font-weight: $font-weight-light;
     line-height: 17px;
     letter-spacing: 0em;
     text-align: left;

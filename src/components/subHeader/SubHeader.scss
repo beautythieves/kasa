@@ -11,10 +11,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 25px;
-  margin-left:30px;
+  margin-left:20px;
   &-text {
     font-size: $subHeader-font-size-mobile;
-    font-weight: $subHeader-font-weight-mobile;
+    font-weight: $font-weight-medium;
     color: $secondary-color;
     margin: 0;
     padding: 20px;
@@ -27,6 +27,7 @@
     height: 223px;
     align-content: center;
     margin-top:63px;
+    margin-left: 0 !important;
 
     &-text {
       font-size: $subHeader-font-size-desktop;

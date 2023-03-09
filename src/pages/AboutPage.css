@@ -10,7 +10,7 @@
   height: 100%;
   background-color: #fff;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: $med-border-radius;
 }
 
 .about_container > img {
@@ -32,5 +32,5 @@
   height: 100%;
   background-color: #fff;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: $med-border-radius;
 }/*# sourceMappingURL=AboutPage.css.map */

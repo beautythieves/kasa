@@ -1,6 +1,7 @@
+@import "../../styles/variables.scss";
 .home_accomodations_container{
   display: grid;
-  margin: 0 12px;
+  margin: 0 ;
 }
 .accomodations {
   display: grid;
@@ -8,7 +9,7 @@
     grid-gap: 50px;
   justify-items: center;
   background-color: #F6F6F6;
-  border-radius: 25px;
+  border-radius: $Xbig-border-radius;
   padding:56px 50px;
 }
 

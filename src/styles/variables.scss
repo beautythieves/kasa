@@ -1,12 +1,16 @@
 /* colors*/
 $primary-color: #ff5656;
 $secondary-color: #fff;
-
+/*font-size*/
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$font-size-big: 18px;
+$font-size-huge: 24px;
+$font-size-giant: 48px;
 /* margins */
 /* header section*/
-$header-margin: 20px;
+$header-margin-small: 20px;
 $nav-margin-top: 20px;
-$nav-font-size: 12px;
 
 $header-margin-desktop: 40px 100px;
 $nav-font-size-desktop: 34px;
@@ -14,6 +18,16 @@ $nav-font-size-desktop: 34px;
 $subHeader-margin-desktop: 0 100px;
 $subHeader-padding-desktop: 60px;
 $subHeader-font-size-desktop: 48px;
-$subHeader-font-weight-mobile: 500;
 $subHeader-font-size-mobile:24px;
 
+/* border radius*/
+$Xbig-border-radius: 25px;
+$big-border-radius: 15px;
+$med-border-radius: 10px;
+$small-border-radius: 5px;
+
+/* font-weight*/
+$font-weight-bold: 700;
+$font-weight-medium: 500;
+$font-weight-light: 400;
+$font-weight-thin: 300;
