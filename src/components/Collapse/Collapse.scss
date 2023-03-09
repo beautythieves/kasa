@@ -5,6 +5,7 @@
   flex-direction: column;
   background-color: #f6f6f6;
   align-items: center;
+  border-radius:5px;
 }
 .collapse_title {
   background-color: $primary-color;
@@ -29,23 +30,25 @@
   align-items: flex-start;
   justify-content: center;
   margin: 0;
-  padding: 10px 0;
+  padding: 10px 400px 0 0;
   color: $secondary-color;
   list-style-type: none;
   text-align: left; /* Add this line */
 }
 
 .collapse_content li {
-  margin-right: 10px;
-  padding: 5px 10px;
+  font-weight: 400;
+  font-size:18px;
   border-radius: 5px;
   font-style: none;
   color: $primary-color;
+  line-height: 25.67px;
 }
 .content_p {
   padding-left:20px;
   color: $primary-color;
-  font-size:18px;
+  font-size:24px;
+  line-height: 34.22px;
 }
 /* Style the arrowheads */
 .collapse h1 .arrow {

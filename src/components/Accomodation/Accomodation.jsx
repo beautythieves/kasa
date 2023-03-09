@@ -58,9 +58,11 @@ export default function AccomodationDetails() {
           title="Description"
           content={accommodationDetails.description}
         />
+        
         <Collapse 
           title="&#xC9;quipement"
           content={accommodationDetails.equipments}
+          
         />
       </div>
     </div>

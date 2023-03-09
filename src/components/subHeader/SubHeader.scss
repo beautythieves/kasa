@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 25px;
-  margin: 0 20px 0 20px;
+  margin-left:30px;
   &-text {
     font-size: $subHeader-font-size-mobile;
     font-weight: $subHeader-font-weight-mobile;
@@ -26,7 +26,7 @@
     width: 1240px;
     height: 223px;
     align-content: center;
-    margin:0;
+    margin-top:63px;
 
     &-text {
       font-size: $subHeader-font-size-desktop;

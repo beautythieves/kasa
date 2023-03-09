@@ -6,7 +6,6 @@
   grid-template-areas:
     "title_location host"
     "tag rating";
-    padding-left: 30px;
 }
 .rating {
   grid-area: rating;
@@ -29,6 +28,7 @@
   background-color: $secondary-color;
   padding: 20px;
   border-radius: 10px;
+  width: 1240px;
 
   .accomodation_titleAndLocation {
     display: flex;
@@ -110,7 +110,6 @@
   gap: 60px;
   justify-content: center;
   margin-bottom: 30px;
-  padding-left:30px;
 }
 .collapse {
   width: 1024px;
