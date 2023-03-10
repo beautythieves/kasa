@@ -14,8 +14,10 @@ export default function Header() {
       <img className="header-img" src={logo} alt="kasa logo" />
     </div>
       <nav className="navbar">
-        <NavLink to="/">Accueil</NavLink>
-        <NavLink to="/about">&Agrave; propos</NavLink>
+      <NavLink to="/" className={({isActive}) => (isActive ? "isActive" : '')}>Accueil</NavLink>
+      <NavLink to="/about" className={({isActive}) => (isActive ? "isActive" : '')}>&Agrave; propos</NavLink>
+
+
       </nav>
     </header>
   );

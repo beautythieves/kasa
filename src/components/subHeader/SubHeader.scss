@@ -10,10 +10,10 @@
     url(./backgroundSubHeader.png);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 25px;
+  border-radius: $Xbig-border-radius;
   margin-left:20px;
   &-text {
-    font-size: $subHeader-font-size-mobile;
+    font-size: $font-size-huge;
     font-weight: $font-weight-medium;
     color: $secondary-color;
     margin: 0;

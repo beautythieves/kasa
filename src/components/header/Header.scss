@@ -62,11 +62,17 @@ header {
         font-size: $font-size-huge;
         color: $primary-color;
         text-transform: none;
-        padding-left: 30px;
+        padding-bottom: 20px;
         margin: 0;
-        width: 116px;
-        height: 34px;
       }
     }
   }
+}
+a:link {
+  text-decoration: none;
+}
+
+.isActive {
+  // text-decoration: underline;
+  border-bottom: 1px solid red;
 }

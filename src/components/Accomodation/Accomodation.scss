@@ -36,7 +36,7 @@
     align-items: flex-start;
 
     .accomodation_details_title {
-      font-size: 36px;
+      font-size:$font-size-XL;
       font-weight: $font-weight-medium;
       color: $primary-color !important;
       text-align: left;
@@ -60,7 +60,7 @@
       color: $primary-color;
       font-weight: $font-weight-medium;
       margin-right: 10px;
-      font-size: 18px;
+      font-size:$font-size-big;
       text-align: right;
     }
 
@@ -95,7 +95,7 @@
   background-color: $primary-color;
   border-radius: $med-border-radius;
   color: $secondary-color;
-  font-size: 14px;
+  font-size:$font-size-medium;
   font-weight: $font-weight-medium;
   width: 115px;
   height: 25px;
@@ -201,7 +201,7 @@
   }
 
   .accomodation_details_title {
-    font-size: 18px !important;
+    font-size: $font-size-big !important;
     font-weight: $font-weight-medium;
     line-height: 26px;
     letter-spacing: 0em;
@@ -210,7 +210,7 @@
   }
 
   .accomodation_details_location {
-    font-size: 14px !important;
+    font-size: $font-size-medium!important;
     font-weight: $font-weight-medium;
     text-align: center;
     line-height: 20px;
@@ -220,7 +220,7 @@
   }
 
   .tags li {
-    font-size: 10px;
+    font-size: $font-size-Xsmall;
     margin-right: 10px;
     margin-bottom: 10px;
     padding: 5px 10px;

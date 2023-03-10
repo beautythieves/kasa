@@ -47,7 +47,7 @@
 .content_p {
   padding-left: 20px;
   color: $primary-color;
-  font-size: 24px;
+  font-size: $font-size-big;
   line-height: 34.22px;
 }
 /* Style the arrowheads */
@@ -104,11 +104,11 @@
   .collapse_content li {
     margin-right: 10px;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: $small-border-radius;
     font-style: none;
     color: $primary-color;
     font-size: $font-size-small;
-    font-weight: 400;
+    font-weight: $font-weight-light;
     line-height: 17px;
     letter-spacing: 0em;
     text-align: left;

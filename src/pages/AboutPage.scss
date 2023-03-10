@@ -1,6 +1,5 @@
 /* import the variables from the variables file */
 @import "../styles/variables.scss";
-/* center the container*/
 
 .about_container {
   display: flex;
@@ -8,7 +7,6 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-
   background-color: $secondary-color;
   padding: 0 20px;
   border-radius: $med-border-radius;
@@ -64,3 +62,4 @@
     border-radius: $med-border-radius;
   }
 }
+
