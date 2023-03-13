@@ -1,5 +1,5 @@
 {
-  "homepage": "https//beautythieves.github.io/kasa",
+  "homepage": "https://beautythieves.github.io/kasa",
   "name": "kasa",
   "version": "0.1.0",
   "private": true,
@@ -70,6 +70,7 @@
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
     "gh-pages": "^5.0.0",
+    "install": "^0.13.0",
     "prop-types": "^15.8.1",
     "react-router-dom": "^6.8.1",
     "webpack": "^5.75.0"

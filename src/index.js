@@ -1,13 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-/*import style.scss from styles/style.csss*/
 import "./styles/style.scss";
 import "index.css" 
 import reportWebVitals from "./reportWebVitals";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/HomePage";
-
 import { Routes, BrowserRouter, Route } from "react-router-dom";
 import Error from "./pages/ErrorPage";
 import About from "./pages/AboutPage";
@@ -29,6 +27,7 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+//how to link to vercel?
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
