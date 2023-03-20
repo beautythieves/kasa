@@ -4,11 +4,13 @@ import backgroundImage from "../images/aboutback.png";
 import Collapse from "../components/Collapse/Collapse";
 /*import about scss*/
 import "./AboutPage.scss";
-
+import Banner from "../components/banner/Banner";
 export default function About() {
   return (
     <main className="about_container">
+      <Banner image={backgroundImage}  />
       <img src={backgroundImage} alt="background" />
+     
       <div className="about_collapse_container">
         <Collapse
           title="Fiabilité"

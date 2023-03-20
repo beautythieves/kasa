@@ -1,0 +1,31 @@
+@import "../../styles/variables.scss";
+/*small devices*/
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 111px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $Xbig-border-radius;
+    filter: brightness(50%);
+    z-index:1;
+  }
+  .banner-text {
+    z-index: 2;;
+    font-size: $font-size-huge;
+    color: $secondary-color;
+    font-weight: $font-weight-medium;
+    
+  }
+  @media screen and (min-width: 768px) {
+    .banner {
+      height: 223px;
+      width: 1240px;
+    }
+    .banner-text{
+      font-size: $subHeader-font-size-desktop;
+
+    }
+  }

@@ -30,10 +30,11 @@
   align-items: flex-start;
   justify-content: center;
   margin: 0;
-  padding: 10px 400px 0 0;
+  padding-top: 20px;
   color: $secondary-color;
   list-style-type: none;
-  text-align: left; /* Add this line */
+  text-align: left; 
+  width:100%;
 }
 
 .collapse_content li {
@@ -46,6 +47,7 @@
 }
 .content_p {
   padding-left: 20px;
+  padding-right:20px;
   color: $primary-color;
   font-size: $font-size-big;
   line-height: 34.22px;
