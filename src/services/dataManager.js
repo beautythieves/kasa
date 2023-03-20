@@ -1,5 +1,4 @@
 
-
 import Data from '../data/data.json';  
 
 function getAccomodations(){

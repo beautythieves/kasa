@@ -47,7 +47,7 @@
     height: 415px;
   }
 
-  @media (max-width: 1350px) {
+  @media (max-width: 768px) {
     .carousel {
       grid-template-rows: 2fr 10fr 2fr;
       width: 100%;
