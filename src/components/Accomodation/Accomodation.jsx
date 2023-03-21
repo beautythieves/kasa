@@ -15,7 +15,7 @@ export default function AccomodationDetails() {
     if (!result) {
       navigate("/error404");
     } else setAccommodationDetails(result);
-  }, []);
+  }, [id, navigate]);
 
   return (
     accommodationDetails && (

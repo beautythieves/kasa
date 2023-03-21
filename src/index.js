@@ -9,7 +9,7 @@ import AppRouter from "./routeur/AppRouter";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter  basename={""}>
       <AppRouter />
     </BrowserRouter>
   </React.StrictMode>
