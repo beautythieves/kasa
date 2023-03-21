@@ -8,9 +8,8 @@ import Banner from "../components/banner/Banner";
 export default function About() {
   return (
     <main className="about_container">
-      <Banner image={backgroundImage}  />
-      <img src={backgroundImage} alt="background" />
-     
+      <Banner image={backgroundImage} />
+
       <div className="about_collapse_container">
         <Collapse
           title="Fiabilité"

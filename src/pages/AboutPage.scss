@@ -1,15 +1,16 @@
 /* import the variables from the variables file */
 @import "../styles/variables.scss";
-
+/*small devices*/
 .about_container {
-  display: flex;
+  // display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   background-color: $secondary-color;
-  padding: 0 20px;
   border-radius: $med-border-radius;
+  height:100%;
+  width:100%;
 }
 .about_container > img {
   height: 223px;
@@ -38,7 +39,7 @@
     justify-content: center;
     margin-top: 10px!important;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     background-color: $secondary-color;
     padding:  0;
     border-radius: $med-border-radius;
