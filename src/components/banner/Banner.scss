@@ -11,7 +11,7 @@
   background-color: black;
   height: 223px;
   mix-blend-mode: darken;
-  margin: 19px;
+  margin:  19px;
 }
 .banner:before {
   content: "";
@@ -46,7 +46,9 @@
   .banner {
     height: 223px;
     width: 1240px;
-    padding:20px 0;
+    padding:45px 0;
+    margin:63px 19px 19px  19px;
+
   }
   .banner-text {
     font-size: $subHeader-font-size-desktop;
